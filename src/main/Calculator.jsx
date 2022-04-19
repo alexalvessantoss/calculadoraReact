@@ -29,7 +29,7 @@ export default class Calculator extends Component {
             this.setState({operation, current: 1, clearDisplay: true})
         }else{
             const equals = operation === '='
-            const currentOperation = this.state.operation
+            /*const currentOperation = this.state.operation*/
 
             const values = [...this.state.values]
             /*try{
@@ -72,8 +72,8 @@ export default class Calculator extends Component {
 
 
     render() {
-        const addDigit = n => this.addDigit(n)
-        const setOperation = op => this.setOperation(op)
+        /*const addDigit = n => this.addDigit(n)
+        const setOperation = op => this.setOperation(op)*/
 
         return (
             <div className="calculator">
